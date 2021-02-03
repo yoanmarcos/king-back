@@ -8,5 +8,26 @@ datasource db {
 
 generator client {
   provider = "prisma-client-js"
+  previewFeatures = ["groupBy"]
 }
 
+model Pays {
+  id Int @default(autoincrement()) @id
+  name String
+  Ressource Ressource @relation(fields: [RessourceId], references:[id])
+  RessourceId Int
+}
+ model Ressource {
+  Type String
+  id Int @default(autoincrement()) @id
+ }
+
+ model Habitant {
+  id Int @default(autoincrement()) @id
+  link String
+  lastname String
+  firstname String
+  statut String
+  Pays Pays @relation(fields: [PaysId], references: [id])
+  PaysId Int
+ }

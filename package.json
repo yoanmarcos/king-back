@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@prisma/client": "^2.14.0",
+    "@prisma/client": "^2.16.0",
     "bcrypt": "^5.0.0",
     "create-express-api": "^1.1.0",
     "dotenv": "^8.2.0",
