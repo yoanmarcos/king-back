@@ -39,13 +39,14 @@ router.get('/:id', async (req, res, next) => {
 
 router.post('/', async (req, res, next) => {
   try {
+    const { firstname, lastname, statut, link, PaysId } = req.body;
     const results = await prisma.habitant.create({
       data: {
-        name: req.body.name,
-        country: req.body.country,
-        text: req.body.text,
-        longitude: req.body.longitude,
-        latitude: req.body.latitude,
+        firstname,
+        lastname,
+        statut,
+        link,
+        PaysId: { connect: { id: parseInt(PaysId, 10) } },
       },
     });
     res.status(201).json(results);
