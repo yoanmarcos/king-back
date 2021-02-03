@@ -42,7 +42,92 @@ async function main() {
     data: {
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
-      statut: 'Noble',
+      statut: 'Famille Royale',
+      link: '',
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Famille Royale',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Famille Royale',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Famille Royale',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Famille Royale',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Famille Royale',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Famille Royale',
+      link: faker.image.avatar(),
       Pays: {
         connect: {
           id: 1,
@@ -56,6 +141,7 @@ async function main() {
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
       statut: 'Noble',
+      link: faker.image.avatar(),
       Pays: {
         connect: {
           id: 1,
@@ -69,6 +155,7 @@ async function main() {
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
       statut: 'Noble',
+      link: faker.image.avatar(),
       Pays: {
         connect: {
           id: 1,
@@ -82,6 +169,7 @@ async function main() {
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
       statut: 'Noble',
+      link: faker.image.avatar(),
       Pays: {
         connect: {
           id: 1,
@@ -95,6 +183,7 @@ async function main() {
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
       statut: 'Noble',
+      link: faker.image.avatar(),
       Pays: {
         connect: {
           id: 1,
@@ -108,6 +197,7 @@ async function main() {
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
       statut: 'Noble',
+      link: faker.image.avatar(),
       Pays: {
         connect: {
           id: 1,
@@ -121,6 +211,7 @@ async function main() {
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
       statut: 'Noble',
+      link: faker.image.avatar(),
       Pays: {
         connect: {
           id: 1,
@@ -134,6 +225,7 @@ async function main() {
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
       statut: 'Noble',
+      link: faker.image.avatar(),
       Pays: {
         connect: {
           id: 1,
@@ -147,12 +239,157 @@ async function main() {
       firstname: faker.name.firstName(),
       lastname: faker.name.lastName(),
       statut: 'Noble',
+      link: faker.image.avatar(),
       Pays: {
         connect: {
           id: 1,
         },
       },
     },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Noble',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Noble',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Noble',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Paysan',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Paysan',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Paysan',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Paysan',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Paysan',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Paysan',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.habitant.create({
+    data: {
+      firstname: faker.name.firstName(),
+      lastname: faker.name.lastName(),
+      statut: 'Paysan',
+      link: faker.image.avatar(),
+      Pays: {
+        connect: {
+          id: 1,
+        },
+      },
+    },
+  });
+
+  await prisma.Pays.create({
+    data: {},
   });
 }
 
