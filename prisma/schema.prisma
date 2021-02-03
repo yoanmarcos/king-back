@@ -17,9 +17,10 @@ model Pays {
   Ressource Ressource @relation(fields: [RessourceId], references:[id])
   RessourceId Int
 }
+
  model Ressource {
-  Type String
   id Int @default(autoincrement()) @id
+  Type String
  }
 
  model Habitant {

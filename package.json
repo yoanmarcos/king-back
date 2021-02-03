@@ -1,5 +1,5 @@
 {
-  "name": "Roadbook_back",
+  "name": "King_Back",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -35,7 +35,8 @@
     "lint": "eslint --fix src",
     "generate": "npx prisma generate",
     "migrate:dev": "npx prisma migrate dev --preview-feature",
-    "seed": "npx prisma migrate reset --preview-feature && node ./prisma/seed.js"
+    "seed": "npx prisma migrate reset --preview-feature && node ./prisma/seed.js",
+    "dropdb": "npx prisma migrate reset --preview-feature"
   },
   "repository": {
     "type": "git",

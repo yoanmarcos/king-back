@@ -9,7 +9,7 @@ require('dotenv').config();
 const middlewares = require('./middlewares');
 
 // routes
-// const routes = require('./routes');
+const routes = require('./routes');
 // const routeAuth = require('./auth');
 
 const app = express();
@@ -21,7 +21,7 @@ app.use(express.json());
 
 // app.use('/auth', routeAuth);
 // app.use(jwtDecode);
-// app.use('/', routes);
+app.use('/', routes);
 
 app.use(middlewares.notFound);
 app.use(middlewares.errorHandler);

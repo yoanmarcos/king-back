@@ -1,40 +1,84 @@
 const faker = require('faker');
 const prisma = require('../src/prismaClient');
 
-async function main() {
+(async () => {
   await prisma.ressource.create({
     data: {
-      type: 'Fer',
+      Type: 'Fer',
     },
   });
   await prisma.ressource.create({
     data: {
-      type: 'Or',
+      Type: 'Or',
     },
   });
   await prisma.ressource.create({
     data: {
-      type: 'Argent',
+      Type: 'Argent',
     },
   });
   await prisma.ressource.create({
     data: {
-      type: 'Blé',
+      Type: 'Blé',
     },
   });
   await prisma.ressource.create({
     data: {
-      type: 'Bois',
+      Type: 'Bois',
     },
   });
   await prisma.ressource.create({
     data: {
-      type: 'Poissons',
+      Type: 'Poissons',
     },
   });
   await prisma.ressource.create({
     data: {
-      type: 'Armes',
+      Type: 'Armes',
+    },
+  });
+
+  await prisma.pays.create({
+    data: {
+      name: 'Colchis',
+      Ressource: {
+        connect: {
+          id: faker.random.number({ min: 1, max: 7 }),
+        },
+      },
+    },
+  });
+
+  await prisma.pays.create({
+    data: {
+      name: 'France',
+      Ressource: {
+        connect: {
+          id: faker.random.number({ min: 1, max: 7 }),
+        },
+      },
+    },
+  });
+
+  await prisma.pays.create({
+    data: {
+      name: 'Grèce',
+      Ressource: {
+        connect: {
+          id: faker.random.number({ min: 1, max: 7 }),
+        },
+      },
+    },
+  });
+
+  await prisma.pays.create({
+    data: {
+      name: 'Roumanie',
+      Ressource: {
+        connect: {
+          id: faker.random.number({ min: 1, max: 7 }),
+        },
+      },
     },
   });
 
@@ -387,17 +431,7 @@ async function main() {
       },
     },
   });
-
-  await prisma.Pays.create({
-    data: {},
-  });
-}
-
-main()
-  .catch((e) => {
-    throw e;
-  })
-  .finally(async () => {
-    console.log('Seed done');
-    await prisma.$disconnect();
-  });
+})().finally(async () => {
+  console.log('Seed done');
+  await prisma.$disconnect();
+});
