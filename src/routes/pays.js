@@ -41,13 +41,11 @@ router.get('/:id', async (req, res, next) => {
 
 router.post('/', async (req, res, next) => {
   try {
+    const { name, RessourceId } = req.body;
     const results = await prisma.pays.create({
       data: {
-        name: req.body.name,
-        country: req.body.country,
-        text: req.body.text,
-        longitude: req.body.longitude,
-        latitude: req.body.latitude,
+        name,
+        Ressource: { connect: { id: parseInt(RessourceId, 10) } },
       },
     });
     res.status(201).json(results);

@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "dependencies": {
-    "@prisma/client": "^2.16.0",
+    "@prisma/cli": "^2.15.0",
+    "@prisma/client": "^2.15.0",
     "bcrypt": "^5.0.0",
     "cors": "^2.8.5",
     "create-express-api": "^1.1.0",
@@ -13,8 +14,7 @@
     "faker": "^5.1.0",
     "helmet": "^4.3.1",
     "jsonwebtoken": "^8.5.1",
-    "morgan": "^1.10.0",
-    "prisma": "^2.16.0"
+    "morgan": "^1.10.0"
   },
   "devDependencies": {
     "eslint": "^7.14.0",
